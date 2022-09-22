@@ -35,6 +35,9 @@ Build.BRAND=MTK
 ro.camera.sound.forced=0
 vendor.camera.tran.nums=1
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Fuse passthrough
 persist.sys.fuse.passthrough.enable=true
 
