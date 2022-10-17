@@ -10,6 +10,7 @@ vendor.af.threshold.src_and_effect_count=5
 # Audio
 ro.audio.silent=0
 ro.audio.usb.period_us=16000
+ro.config.vc_call_vol_steps=9
 persist.vendor.anr.dumpthr=1
 
 # Bluetooth
