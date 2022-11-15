@@ -60,7 +60,7 @@ on charger
 
 on property:sys.boot_completed=1
 
-    write /sys/devices/system/cpu/eas/enable 2
+    write /sys/devices/system/cpu/eas/enable 1
     write /proc/cpufreq/cpufreq_sched_disable 0
     write /dev/stune/schedtune.boost 0
     write /dev/stune/foreground/schedtune.boost 0
