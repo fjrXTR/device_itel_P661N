@@ -1,5 +1,9 @@
 # Unpinned blobs from sys_tssi_64_armv82_itel-user 13 TP1A.220624.014 610912 release-keys
 
+# AEE
+vendor/lib/libaedv.so
+vendor/lib64/libaedv.so
+
 # Audio
 vendor/bin/audiocmdservice_atci
 vendor/etc/init/audiocmdservice_atci.rc
