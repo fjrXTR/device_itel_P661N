@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)-kernel/kernel:kernel
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
