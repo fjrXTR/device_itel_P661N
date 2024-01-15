@@ -10,6 +10,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Inherit virtual_ab_ota product
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch.mk)
+
+# Enable compressed snapshots with Virtual A/B
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/android_t_baseline.mk)
+
+PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
+
 # A/B
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
