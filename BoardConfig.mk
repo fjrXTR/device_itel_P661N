@@ -7,6 +7,18 @@
 DEVICE_PATH := device/itel/P661N
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
+# A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    boot\
+    product \
+    system \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor \
+    vendor
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
@@ -86,6 +98,9 @@ BOARD_USES_METADATA_PARTITION := true
 # Platform
 TARGET_BOARD_PLATFORM := mt6833
 BOARD_HAS_MTK_HARDWARE := true
+
+# Recovery
+BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Inherit the proprietary files
 include vendor/itel/P661N/BoardConfigVendor.mk
