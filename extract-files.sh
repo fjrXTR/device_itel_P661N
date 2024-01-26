@@ -61,6 +61,9 @@ function blob_fixup() {
         vendor/bin/hw/android.hardware.vibrator-service.mediatek)
             "$PATCHELF" --replace-needed "android.hardware.vibrator-V2-ndk_platform.so" "android.hardware.vibrator-V2-ndk.so" "$2"
             ;;
+        vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service | vendor/lib64/android.hardware.power-service-mediatek.so)
+            "$PATCHELF" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "$2"
+            ;;
         vendor/bin/hw/camerahalserver)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
             "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v31.so" "${2}"
