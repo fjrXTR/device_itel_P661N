@@ -37,6 +37,7 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@ln -sf $(TARGET_BOARD_PLATFORM)/libdpframework.so $(TARGET_OUT_VENDOR)/lib/libdpframework.so
 	@ln -sf $(TARGET_BOARD_PLATFORM)/libgpudataproducer.so $(TARGET_OUT_VENDOR)/lib/libgpudataproducer.so
 	@ln -sf $(TARGET_BOARD_PLATFORM)/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib/libmtk_drvb.so
+	@ln -sf $(TARGET_BOARD_PLATFORM)/libnir_neon_driver.so $(TARGET_OUT_VENDOR)/lib/libnir_neon_driver.so
 	@ln -sf $(TARGET_BOARD_PLATFORM)/libpq_prot.so $(TARGET_OUT_VENDOR)/lib/libpq_prot.so
 	@ln -sf $(TARGET_BOARD_PLATFORM)/vulkan.mali.so $(TARGET_OUT_VENDOR)/lib/hw/vulkan.mali.so
 	@ln -sf $(TARGET_BOARD_PLATFORM)/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib64/egl/libGLES_mali.so
@@ -52,7 +53,8 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@ln -sf $(TARGET_BOARD_PLATFORM)/libmcv_runtime.so $(TARGET_OUT_VENDOR)/lib64/libmcv_runtime.so
 	@ln -sf $(TARGET_BOARD_PLATFORM)/libmdla_ut.so $(TARGET_OUT_VENDOR)/lib64/libmdla_ut.so
 	@ln -sf $(TARGET_BOARD_PLATFORM)/libmnl.so $(TARGET_OUT_VENDOR)/lib64/libmnl.so
-	@ln -sf $(TARGET_BOARD_PLATFORM)/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib64/libmtk_drvb.so
+	@ln -sf $(TARGET_BOARD_PLATFORM)/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib64/libmtk_drvb.so=
+	@ln -sf $(TARGET_BOARD_PLATFORM)/libnir_neon_driver.so $(TARGET_OUT_VENDOR)/lib64/libnir_neon_driver.so
 	@ln -sf $(TARGET_BOARD_PLATFORM)/libpq_prot.so $(TARGET_OUT_VENDOR)/lib64/libpq_prot.so
 	@ln -sf $(TARGET_BOARD_PLATFORM)/vulkan.mali.so $(TARGET_OUT_VENDOR)/lib64/hw/vulkan.mali.so
 	$(hide) touch $@
