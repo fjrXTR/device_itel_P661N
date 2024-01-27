@@ -21,6 +21,12 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@mkdir -p $(TARGET_OUT_VENDOR)/lib/hw
 	@mkdir -p $(TARGET_OUT_VENDOR)/lib64/egl
 	@mkdir -p $(TARGET_OUT_VENDOR)/lib64/hw
+	@ln -sf libSoftGatekeeper.so $(TARGET_OUT_VENDOR)/lib/hw/gatekeeper.default.so
+	@ln -sf libSoftGatekeeper.so $(TARGET_OUT_VENDOR)/lib64/hw/gatekeeper.default.so
+	@ln -sf libMcGatekeeper.so $(TARGET_OUT_VENDOR)/lib/hw/gatekeeper.trustonic.so
+	@ln -sf libMcGatekeeper.so $(TARGET_OUT_VENDOR)/lib64/hw/gatekeeper.trustonic.so
+	@ln -sf kmsetkey.trustonic.so $(TARGET_OUT_VENDOR)/lib/hw/kmsetkey.default.so
+	@ln -sf kmsetkey.trustonic.so $(TARGET_OUT_VENDOR)/lib64/hw/kmsetkey.default.so
 	@ln -sf $(TARGET_BOARD_PLATFORM)/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib/egl/libGLES_mali.so
 	@ln -sf $(TARGET_BOARD_PLATFORM)/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib/hw/vulkan.$(TARGET_BOARD_PLATFORM).so
 	@ln -sf $(TARGET_BOARD_PLATFORM)/android.hardware.graphics.allocator@4.0-impl-mediatek.so $(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
