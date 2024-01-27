@@ -438,3 +438,10 @@ vendor/firmware/wifi.cfg
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1a_1.bin
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1_1.bin
 vendor/firmware/WMT_SOC.cfg
+
+# Fuelgauged
+vendor/bin/fuelgauged
+vendor/bin/fuelgauged_nvram
+vendor/etc/init/fuelgauged_init.rc
+vendor/etc/init/fuelgauged_nvram_init.rc
+vendor/lib/libfgauge_gm30.so
