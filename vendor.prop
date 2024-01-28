@@ -103,7 +103,6 @@ persist.vendor.factory.GB2312=no
 persist.vendor.fd.on.charge=0
 persist.vendor.swapfile_enable=true
 persist.vendor.swapfile_size_mb=0
-persist.vendor.memfusion_ui_enable=true
 ro.vendor.mtk_config_max_dram_size=0x800000000
 ro.vendor.mtk_f2fs_enable=1
 ro.vendor.mtk_fd_support=1
@@ -153,6 +152,8 @@ ro.vendor.pq.mtk_video_transition=0
 ro.vendor.pref_scale_enable_cfg=1
 ro.vendor.mtk_pq_color_mode=3
 ro.vendor.mtk_pq_support=2
+ro.vendor.composer_version=2.3
+ro.hardware.hwcomposer=mtk_common
 
 # FM Radio
 ro.vendor.fm.platform=mt6631
@@ -300,6 +301,7 @@ ro.vendor.mtk_trustonic_tee_support=1
 ro.vendor.mtk_tee_gp_support=1
 ro.vendor.mtk_svp_on_mtee_support=1
 ro.mtk_key_manager_support=1
+ro.vendor.keymaster_version=4.1
 
 # USB
 ro.vendor.usb.kpoc_adb=0
