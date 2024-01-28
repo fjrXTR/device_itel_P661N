@@ -181,7 +181,8 @@ PRODUCT_COPY_FILES += \
 
 # NDK
 PRODUCT_PACKAGES += \
-    android.hardware.gnss-V1-ndk.vendor
+    android.hardware.gnss-V1-ndk.vendor \
+    android.hardware.light-V1-ndk.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \
