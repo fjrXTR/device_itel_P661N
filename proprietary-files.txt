@@ -1441,6 +1441,14 @@ vendor/thh/ta/93feffccd8ca11e796c7c7a21acb4932.ta
 vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta
 vendor/thh/ta/df1edda8627911e980ae507b9d9a7e7d.ta
 
+# TNE
+vendor/bin/hw/vendor.tne@1.0-service
+vendor/etc/init/tnev.rc
+vendor/etc/vintf/manifest/manifest_tneengine.xml
+vendor/lib64/libtneclient.so
+vendor/lib64/libtnev.so
+vendor/lib64/vendor.transsion.hardware.tne.tneengine@1.0.so
+
 # Tranlog
 vendor/bin/tranlog
 vendor/bin/tranlogconfig
