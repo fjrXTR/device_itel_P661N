@@ -1135,6 +1135,16 @@ vendor/thh/ta/93feffccd8ca11e796c7c7a21acb4932.ta
 vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta
 vendor/thh/ta/df1edda8627911e980ae507b9d9a7e7d.ta
 
+# Tranlog
+vendor/bin/tranlog
+vendor/bin/tranlogconfig
+vendor/etc/init/init.tranlog.rc
+vendor/etc/init/init.tranlogconfig.rc
+vendor/lib64/libminizip.so
+vendor/lib64/libtranlog.so
+vendor/lib64/vendor.transsion.hardware.tranlog@1.0.so
+vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so
+
 # Trusted UI
 vendor/bin/hw/vendor.trustonic.tee@1.1-service
 vendor/etc/init/tee.rc
