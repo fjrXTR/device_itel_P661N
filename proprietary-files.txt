@@ -1193,6 +1193,23 @@ vendor/lib64/libvcodecdrv_header_stub.so
 vendor/lib64/libvpu.so
 vendor/lib64/libvpu5.so
 
+# Misc
+vendor/bin/hw/vendor.mediatek.hardware.tranHwInfo@1.0-service
+vendor/bin/fpsgo
+vendor/bin/gbe
+vendor/bin/md_monitor
+vendor/bin/meta_tst
+vendor/bin/mt6660_calibration
+vendor/bin/rt5512_calibration
+vendor/etc/init/fpsgo.rc
+vendor/etc/init/gbe.rc
+vendor/etc/init/md_monitor.rc
+vendor/etc/init/vendor.mediatek.hardware.tranHwInfo@1.0-service.rc
+vendor/etc/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml
+vendor/lib/vendor.mediatek.hardware.mdmonitor@1.0.so
+vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
+vendor/lib64/vendor.mediatek.hardware.tranHwInfo@1.0.so
+
 # MMAGENT
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
