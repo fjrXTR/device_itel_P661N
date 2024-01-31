@@ -795,6 +795,10 @@ system/lib64/libvcodec_capenc.so
 system/lib64/libvt_avsync.so
 system/priv-app/ImsService/ImsService.apk
 
+# Secure element
+vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
+vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
+
 # Sensors
 vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek
 vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc
