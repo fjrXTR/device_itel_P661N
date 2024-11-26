@@ -254,7 +254,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-V2-ndk.vendor \
     android.hardware.power@1.3.vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
-    
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
 
